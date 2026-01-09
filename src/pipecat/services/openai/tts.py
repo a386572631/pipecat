@@ -172,7 +172,7 @@ class OpenAITTSService(TTSService):
                 "input": text,
                 "model": self.model_name,
                 "voice": VALID_VOICES[self._voice_id],
-                "response_format": "pcm",
+                "response_format": "mp3",
             }
 
             if self._settings["instructions"]:
